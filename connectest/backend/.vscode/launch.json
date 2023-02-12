@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "name": "ts-node-dev",
+      "program": "${workspaceFolder}/index.ts",
+      "request": "launch",
+      "restart": true,
+      "runtimeExecutable": "ts-node-dev",
+      "skipFiles": [
+        "<node_internals>/**"
+      ], 
+      "type": "pwa-ts-node"
+    },
+    {
+      "restart": true,
+      "type": "node",
+      "request": "launch",
+      "name": "start",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/index.ts",
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_ENV": "dev",
+        "PORT": "4000",
+        "DATABASE": "mongodb+srv://iLCabezon:43366441ac@clusterconectest.specbvv.mongodb.net/Conectest?retryWrites=true&w=majority",
+      }
+    },
+  ]
+}
