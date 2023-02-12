@@ -1,0 +1,40 @@
+.main {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.module {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  margin-top: 2rem;
+  width: 40vw;
+  background-color: #606068;
+  border: 5px solid #f0d786;
+  outline: 5px solid #606068;
+  border-radius: 10px;
+}
+
+@font-face {
+  font-family: "Pokemon";
+  src: url("./fonts/Pokemon.ttf");
+}
+
+.description {
+  font-family: "Pokemon";
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  margin: 0.5rem 3rem 0.5rem 0.7rem;
+}

@@ -1,0 +1,151 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.submain {
+  width: 90%;
+  min-height: max-content;
+  background-color: rgb(221, 221, 221);
+  border-radius: 20px;
+}
+.empty {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.message {
+  width: 80%;
+  height: 17%;
+  margin: 5%;
+  border-radius: 20px;
+  font-weight: 600;
+  border: 4px solid var(--error-color);
+}
+.ptitle {
+  color: var(--error-color);
+  font-size: x-large;
+  margin: 1rem;
+  text-transform: capitalize;
+}
+.help {
+  color: gray;
+  font-size: large;
+  margin: 1rem;
+}
+.steps {
+  margin: 1rem;
+}
+.step {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  margin: 1rem;
+}
+.body {
+  margin-bottom: 9%;
+}
+.nav {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.title {
+  color: var(--error-color);
+  font-size: xx-large;
+  margin: 1rem;
+  text-transform: capitalize;
+}
+.reset {
+  text-transform: capitalize;
+  font-size: medium;
+}
+.logo {
+  width: 13rem;
+  height: 5rem;
+}
+
+.delete {
+  position: fixed;
+  z-index: var(--z-index1);
+  margin-top: 10%;
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  background-color: var(--basic-white);
+  box-shadow: 10px 10px 15px rgb(15, 14, 14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+  animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.delete:focus > .main {
+  overflow: hidden;
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.poke {
+  width: 40%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.options {
+  width: 80%;
+  min-height: 80%;
+  display: grid;
+  gap: auto;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+}
+.svg {
+  height: 2em;
+  width: 2em;
+}
+.svg:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.labelcheck {
+  padding-left: 0.5rem;
+  text-transform: capitalize;
+  font-size: x-large;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+}
+.labelcheck:hover {
+  color: var(--error-color);
+}
+.close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../common/close.png");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}

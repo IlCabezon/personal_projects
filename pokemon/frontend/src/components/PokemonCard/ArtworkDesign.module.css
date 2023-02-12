@@ -1,0 +1,377 @@
+.normal,
+.bug,
+.dark,
+.dragon,
+.electric,
+.fairy,
+.fire,
+.flying,
+.ghost,
+.grass,
+.ground,
+.ice,
+.poison,
+.rock,
+.steel,
+.water,
+.psychic,
+.fighting {
+  border: 4px solid;
+  border-color: var(--normal-color);
+  border-radius: 10px;
+  width: 20rem;
+  height: 30rem;
+  background-image: url("./resources/normal.png");
+  background-position: center;
+  background-size: cover;
+  transition: 0.6s;
+  box-shadow: 5px 5px 15px gray;
+  animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.bug {
+  border-color: var(--bug-color);
+  background-image: url("./resources/bug.png");
+}
+.dark {
+  border-color: var(--bug-color);
+  background-image: url("./resources/dark.png");
+}
+.dragon {
+  border-color: var(--dragon-color);
+  background-image: url("./resources/dragon.png");
+}
+.electric {
+  border-color: var(--electric-color);
+  background-image: url("./resources/electric.png");
+}
+.fairy {
+  border-color: var(--fairy-color);
+  background-image: url("./resources/fairy.png");
+}
+.fire {
+  border-color: var(--fire-color);
+  background-image: url("./resources/fire.png");
+}
+.flying {
+  border-color: var(--flying-color);
+  background-image: url("./resources/flying.png");
+}
+.ghost {
+  border-color: var(--ghost-color);
+  background-image: url("./resources/ghost.png");
+}
+.grass {
+  border-color: var(--grass-color);
+  background-image: url("./resources/grass.png");
+}
+.ground {
+  border-color: var(--ground-color);
+  background-image: url("./resources/ground.png");
+}
+.ice {
+  border-color: var(--ice-color);
+  background-image: url("./resources/ice.png");
+}
+.poison {
+  border-color: var(--poison-color);
+  background-image: url("./resources/poison.png");
+}
+.rock {
+  border-color: var(--rock-color);
+  background-image: url("./resources/rock.png");
+}
+.steel {
+  border-color: var(--steel-color);
+  background-image: url("./resources/steel.png");
+}
+.water {
+  border-color: var(--water-color);
+  background-image: url("./resources/water.png");
+}
+.psychic {
+  border-color: var(--psychic-color);
+  background-image: url("./resources/psychic.png");
+}
+.fighting {
+  border-color: var(--psychic-color);
+  background-image: url("./resources/fighting.png");
+}
+.divimg {
+  height: 60%;
+  cursor: pointer;
+}
+.nav {
+  width: max-content;
+  height: max-content;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.info {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.normalname,
+.bugname,
+.darkname,
+.dragonname,
+.electricname,
+.fairyname,
+.firename,
+.flyingname,
+.ghostname,
+.grassname,
+.groundname,
+.icename,
+.poisonname,
+.rockname,
+.steelname,
+.watername,
+.psychicname,
+.fightingname {
+  height: max-content;
+  text-transform: uppercase;
+  font-size: xx-large;
+  font-weight: 500;
+  color: var(--basic-white);
+  border-bottom: 5px solid;
+  border-color: var(--normal-color);
+  border-radius: 10px;
+}
+.bugname {
+  border-color: var(--bug-color);
+}
+.darkname {
+  border-color: var(--dark-color);
+}
+.dragonname {
+  border-color: var(--dragon-color);
+}
+.electricname {
+  border-color: var(--electric-color);
+}
+.fairyname {
+  border-color: var(--fairy-color);
+}
+.firename {
+  border-color: var(--fire-color);
+}
+.flyingname {
+  border-color: var(--flying-color);
+}
+.ghostname {
+  border-color: var(--ghost-color);
+}
+.grassname {
+  border-color: var(--grass-color);
+}
+.groundname {
+  border-color: var(--ground-color);
+}
+.icename {
+  border-color: var(--ice-color);
+}
+.poisonname {
+  border-color: var(--poison-color);
+}
+.rockname {
+  border-color: var(--rock-color);
+}
+.steelnam {
+  border-color: var(--steel-color);
+}
+.watername {
+  border-color: var(--water-color);
+}
+.psychicname {
+  border-color: var(--psychic-color);
+}
+.fightingname {
+  border-color: var(--fighting-color);
+}
+.hp {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-size: large;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+.normalicon,
+.bugicon,
+.darkicon,
+.dragonicon,
+.electricicon,
+.fairyicon,
+.fireicon,
+.flyingicon,
+.ghosticon,
+.grassicon,
+.groundicon,
+.iceicon,
+.poisonicon,
+.rockicon,
+.steelicon,
+.watericon,
+.psychicicon,
+.fightingicon {
+  background-image: url("./resources/artworkResources/normal.png");
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.2rem;
+}
+
+.bugicon {
+  background-image: url("./resources/artworkResources/bug.png");
+}
+.darkicon {
+  background-image: url("./resources/artworkResources/dark.png");
+}
+.dragonicon {
+  background-image: url("./resources/artworkResources/dragon.png");
+}
+.electricicon {
+  background-image: url("./resources/artworkResources/electric.png");
+}
+.fairyicon {
+  background-image: url("./resources/artworkResources/fairy.webp");
+}
+.fireicon {
+  background-image: url("./resources/artworkResources/fire.png");
+}
+.flyingicon {
+  background-image: url("./resources/artworkResources/flying.png");
+}
+.ghosticon {
+  background-image: url("./resources/artworkResources/ghost.png");
+}
+.grassicon {
+  background-image: url("./resources/artworkResources/grass.png");
+}
+.groundicon {
+  background-image: url("./resources/artworkResources/ground.png");
+}
+.iceicon {
+  background-image: url("./resources/artworkResources/ice.png");
+}
+.poisonicon {
+  background-image: url("./resources/artworkResources/poison.png");
+}
+.rockicon {
+  background-image: url("./resources/artworkResources/rock.png");
+}
+.steelicon {
+  background-image: url("./resources/artworkResources/steel.png");
+}
+.watericon {
+  background-image: url("./resources/artworkResources/water.png");
+}
+.psychicicon {
+  background-image: url("./resources/classicResources/psychic.png");
+}
+.fightingicon {
+  background-image: url("./resources/classicResources/fighting.png");
+}
+
+.normalap,
+.bugap,
+.darkap,
+.dragonap,
+.electricap,
+.fairyap,
+.fireap,
+.flyingap,
+.ghostap,
+.grassap,
+.groundap,
+.iceap,
+.poisonap,
+.rockap,
+.steelap,
+.waterap,
+.psychicap,
+.fightingap {
+  color: var(--basic-white);
+  font-size: x-large;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--normal-color);
+}
+.bugnap {
+  border-color: var(--bug-color);
+}
+.darkapap {
+  border-color: var(--dark-color);
+}
+.dragonap {
+  border-color: var(--dragon-color);
+}
+.electricap {
+  border-color: var(--electric-color);
+}
+.fairyap {
+  border-color: var(--fairy-color);
+}
+.fireap {
+  border-color: var(--fire-color);
+}
+.flyingap {
+  border-color: var(--flying-color);
+}
+.ghostap {
+  border-color: var(--ghost-color);
+}
+.grassap {
+  border-color: var(--grass-color);
+}
+.groundap {
+  border-color: var(--ground-color);
+}
+.iceap {
+  border-color: var(--ice-color);
+}
+.poisonap {
+  border-color: var(--poison-color);
+}
+.rockap {
+  border-color: var(--rock-color);
+}
+.steelap {
+  border-color: var(--steel-color);
+}
+.waterap {
+  border-color: var(--water-color);
+}
+.psychicap {
+  border-color: var(--psychic-color);
+}
+.fightingap {
+  border-color: var(--fighting-color);
+}
+.hp {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-size: large;
+}

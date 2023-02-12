@@ -1,0 +1,615 @@
+.main {
+  width: 80%;
+  height: max-content;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 14rem;
+  right: 0;
+  z-index: var(--z-index8);
+  left: 97%;
+  background-color: rgb(117, 112, 112);
+  transition: 1s;
+  opacity: 0.7;
+}
+
+.arrow {
+  position: absolute;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.main:hover {
+  opacity: 1;
+  transform: translateX(-96%);
+}
+
+.sorts {
+  text-align: center;
+  height: 80%;
+}
+.p {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+.image {
+  position: relative;
+  cursor: pointer;
+  margin: 1rem;
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+}
+.image:hover {
+  box-shadow: 5px 5px 30px rgb(95, 92, 92);
+}
+
+.filters {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 40%;
+  height: 90%;
+  display: grid;
+  gap: 0.1rem;
+  grid-auto-rows: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 7rem), 1fr));
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+.normal {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.normal::before {
+  content: "";
+  background: url("./resources/normal.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .normal:hover::before {
+  background-color: var(--normal-color);
+}
+.ormal:checked + .normal::before {
+  background-color: var(--normal-color);
+} */
+
+.flying {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.flying::before {
+  content: "";
+  background: url("./resources/flying.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .flying:hover::before {
+  background-color: var(--flying-color);
+}
+.lying:checked + .flying::before {
+  background-color: var(--flying-color);
+} */
+
+.grass {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.grass::before {
+  content: "";
+  background: url("./resources/grass.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .grass:hover::before {
+  background-color: var(--grass-color);
+}
+.rass:checked + .grass::before {
+  background-color: var(--grass-color);
+} */
+
+.fire {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.fire::before {
+  content: "";
+  background: url("./resources/fire.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .fire:hover::before {
+  background-color: var(--fire-color);
+}
+.ire:checked + .fire::before {
+  background-color: var(--fire-color);
+} */
+
+.water {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.water::before {
+  content: "";
+  background: url("./resources/water.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .water:hover::before {
+  background-color: var(--water-color);
+}
+.ater:checked + .water::before {
+  background-color: var(--water-color);
+} */
+
+.bug {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.bug::before {
+  content: "";
+  background: url("./resources/bug.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .bug:hover::before {
+  background-color: var(--bug-color);
+}
+.ug:checked + .bug::before {
+  background-color: var(--bug-color);
+} */
+
+.electric {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.electric::before {
+  content: "";
+  background: url("./resources/electric.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .electric:hover::before {
+  background-color: var(--electric-color);
+}
+.lectric:checked + .electric::before {
+  background-color: var(--electric-color);
+} */
+
+.fairy {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.fairy::before {
+  content: "";
+  background: url("./resources/fairy.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .fairy:hover::before {
+  background-color: var(--fairy-color);
+}
+.airy:checked + .fairy::before {
+  background-color: var(--fairy-color);
+} */
+
+.ghost {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.ghost::before {
+  content: "";
+  background: url("./resources/ghost.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .ghost:hover::before {
+  background-color: var(--ghost-color);
+}
+.host:checked + .ghost::before {
+  background-color: var(--ghost-color);
+} */
+
+.fighting {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.fighting::before {
+  content: "";
+  background: url("./resources/fighting.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .fighting:hover::before {
+  background-color: var(--fighting-color);
+}
+.ighting:checked + .fighting::before {
+  background-color: var(--fighting-color);
+} */
+
+.rock {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.rock::before {
+  content: "";
+  background: url("./resources/rock.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .rock:hover::before {
+  background-color: var(--rock-color);
+}
+.ock:checked + .rock::before {
+  background-color: var(--rock-color);
+} */
+
+.steel {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.steel::before {
+  content: "";
+  background: url("./resources/steel.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .steel:hover::before {
+  background-color: var(--steel-color);
+}
+.teel:checked + .steel::before {
+  background-color: var(--steel-color);
+}
+ */
+.psychic {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.psychic::before {
+  content: "";
+  background: url("./resources/psychic.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .psychic:hover::before {
+  background-color: var(--psychic-color);
+}
+.sychic:checked + .psychic::before {
+  background-color: var(--psychic-color);
+} */
+
+.ice {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.ice::before {
+  content: "";
+  background: url("./resources/ice.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .ice:hover::before {
+  background-color: var(--ice-color);
+}
+.ce:checked + .ice::before {
+  background-color: var(--ice-color);
+} */
+
+.dragon {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.dragon::before {
+  content: "";
+  background: url("./resources/dragon.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .dragon:hover::before {
+  background-color: var(--dragon-color);
+}
+.ragon:checked + .dragon::before {
+  background-color: var(--dragon-color);
+} */
+
+.dark {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.dark::before {
+  content: "";
+  background: url("./resources/dark.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .dark:hover::before {
+  background-color: var(--dark-color);
+}
+.ark:checked + .dark::before {
+  background-color: var(--dark-color);
+} */
+
+.shadow {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.shadow::before {
+  content: "";
+  background: var(--shadow-color) url("./resources/shadow.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .shadow:hover::before {
+  background-color: var(--shadow-color);
+}
+.hadow:checked + .shadow::before {
+  background-color: var(--shadow-color);
+} */
+
+.ground {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.ground::before {
+  content: "";
+  background: url("./resources/ground.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .ground:hover::before {
+  background-color: var(--water-color);
+}
+.round:checked + .ground::before {
+  background-color: var(--water-color);
+} */
+
+.unknown {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.unknown::before {
+  content: "";
+  background: var(--unknown-color) url("./resources/unknown.png");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .unknown:hover::before {
+  background-color: var(--unknown-color);
+}
+.nknown:checked + .unknown::before {
+  background-color: var(--unknown-color);
+} */
+
+.poison {
+  color: var(--basic-white);
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.poison::before {
+  content: "";
+  background: url("./resources/poison.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+/* .poison:hover::before {
+  background-color: var(--poison-color);
+}
+.oison:checked + .poison::before {
+  background-color: var(--poison-color);
+} */
+
+@media (min-width: 1510px) {
+  .filters {
+    display: grid;
+    grid-auto-rows: 4rem;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 7rem), 1fr));
+  }
+}
+@media (max-width: 1000px) {
+  .filters {
+    margin-left: 2rem;
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 615px) {
+  .p {
+    font-size: small;
+  }
+  .image {
+    width: 4rem;
+    height: 4rem;
+  }
+}

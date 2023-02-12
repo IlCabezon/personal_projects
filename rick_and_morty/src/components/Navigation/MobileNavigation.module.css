@@ -1,0 +1,128 @@
+@media (min-width:500px) {
+    .nav{
+        display: none;
+    }
+}
+@media (max-width:500px){
+    .nav{
+        width: 100%;
+        height: 4rem;
+        background-color: rgb(29, 26, 29);
+        display: flex;
+        position: sticky;
+        z-index: 10;
+        top: 0px;
+        display: inline-block;
+    }
+    .searchBar{
+        position: absolute;
+        z-index: 5;
+        margin: 5px;
+        width: 80vw;
+        height: 50px;
+        border-radius: 30px;
+        background-color: rgb(26, 24, 24);
+        color: rgb(204, 194, 194);
+        text-align: center;
+    }   
+    .menue{
+        position: absolute;
+        right: 0;
+        top: 2px;
+        z-index: 10;
+        
+    }
+    .menueElements{
+        list-style: none;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 8;
+        right: 0;
+        top: 4rem;
+        width: 60%;
+        background-color: rgb(29, 26, 29);
+        opacity: .9;
+        overflow-y:scroll;
+        box-shadow: -5px -5px 15px rgb(31, 29, 29);
+    }
+
+    .home{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(245, 242, 238);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .toHome{
+        margin:10px;
+        text-align: center;
+        font-size: xx-large;
+        border-bottom: 2px solid rgb(131, 24, 218);
+    }
+    .spinPortal{
+        background-image: url(../images/toHome.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        font-display: none;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+    .spinPortal {
+      animation: App-logo-spin infinite 3s linear;
+        }
+    }
+    @keyframes App-logo-spin {
+        from {
+         transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+    }
+
+    .toForm{
+        margin:10px;
+        text-align: center;
+        font-size: xx-large;
+        border-bottom: 2px solid rgb(131, 24, 218);
+    }
+    .create{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(245, 242, 238);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter{
+        text-transform: uppercase;
+        color: rgb(245, 242, 238);
+        margin:10px;
+        text-align: center;
+        font-size: xx-large;
+        border-bottom: 2px solid rgb(131, 24, 218);
+    }
+
+    .filters{
+        position: absolute;
+        right: 10px;
+        z-index: 10;  
+    }
+    .episodes{
+        text-decoration: none;
+    }
+    .episo{
+        color:rgb(245, 242, 238);
+        font-size: xx-large;
+        font-weight: 700;
+    }
+}

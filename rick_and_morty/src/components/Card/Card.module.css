@@ -1,0 +1,59 @@
+@media (min-width:500px) {
+    .card{
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        width: 200px;
+        margin-bottom: 10px;
+        margin-left: 7px;
+    }
+    .h3{
+        color: rgb(17, 16, 16);
+    }
+}
+@media (max-width:500px) {
+.card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 250px;
+    margin: 15px;
+    }
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(235, 233, 237, 0.912) 0px 0px 15px;
+}
+
+@media (min-width:500px) {
+   .image{
+     max-width: 200px;
+     border-top-left-radius:10px ;
+     border-top-right-radius:10px ;
+    }
+}
+@media (max-width:500px) {
+    .image{
+        max-width: 250px;
+        border-top-left-radius:10px ;
+        border-top-right-radius:10px ;
+    }
+}
+	
+
+.divImage{
+    width: 200px;
+}
+.info{
+    padding: 10px;
+    text-align: center;
+}
+.names{
+    font-size: medium;
+    color: #000;
+}
+
+.infor{
+    color: #000;
+    font-size: medium;
+    text-transform: capitalize;
+}

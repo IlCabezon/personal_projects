@@ -1,0 +1,602 @@
+.normal,
+.bug,
+.dark,
+.dragon,
+.electric,
+.fairy,
+.fire,
+.flying,
+.ghost,
+.grass,
+.ground,
+.ice,
+.poison,
+.rock,
+.steel,
+.water,
+.fighting,
+.psychic {
+  background-color: transparent;
+  width: 20rem;
+  height: 25rem;
+  perspective: 1000px;
+  margin: 0 auto;
+  animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.normalname,
+.bugname,
+.darkname,
+.dragonname,
+.electricname,
+.fairyname,
+.firename,
+.flyingname,
+.ghostname,
+.grassname,
+.groundname,
+.icename,
+.poisonname,
+.rockname,
+.steelname,
+.watername,
+.psychicname,
+.fightingname {
+  text-transform: capitalize;
+  font-size: 2.3rem;
+  color: var(--basic-white);
+  border-bottom: 3px solid var(--normal-color);
+}
+.bugname {
+  border-bottom: 3px solid var(--bug-color);
+}
+.darkname {
+  border-bottom: 3px solid var(--dark-color);
+}
+.dragonname {
+  border-bottom: 3px solid var(--dragon-color);
+}
+.electricname {
+  border-bottom: 3px solid var(--electric-color);
+}
+.fairyname {
+  border-bottom: 3px solid var(--fairy-color);
+}
+.firename {
+  border-bottom: 3px solid var(--fire-color);
+}
+.flyingname {
+  border-bottom: 3px solid var(--flying-color);
+}
+.ghostname {
+  border-bottom: 3px solid var(--ghost-color);
+}
+.grassname {
+  border-bottom: 3px solid var(--grass-color);
+}
+.groundname {
+  border-bottom: 3px solid var(--ground-color);
+}
+.icename {
+  border-bottom: 3px solid var(--ice-color);
+}
+.poisonname {
+  border-bottom: 3px solid var(--poison-color);
+}
+.rockname {
+  border-bottom: 3px solid var(--rock-color);
+}
+.steelname {
+  border-bottom: 3px solid var(--steel-color);
+}
+.watername {
+  border-bottom: 3px solid var(--water-color);
+}
+.psychicname {
+  border-bottom: 3px solid var(--psychic-color);
+}
+.fightingname {
+  border-bottom: 3px solid var(--fighting-color);
+}
+
+.img {
+  width: 45%;
+  height: 45%;
+}
+
+.normal:hover .card {
+  transform: rotateY(180deg);
+}
+.bug:hover .card {
+  transform: rotateY(180deg);
+}
+.dark:hover .card {
+  transform: rotateY(180deg);
+}
+.dragon:hover .card {
+  transform: rotateY(180deg);
+}
+.electric:hover .card {
+  transform: rotateY(180deg);
+}
+.fairy:hover .card {
+  transform: rotateY(180deg);
+}
+.fire:hover .card {
+  transform: rotateY(180deg);
+}
+.flying:hover .card {
+  transform: rotateY(180deg);
+}
+.ghost:hover .card {
+  transform: rotateY(180deg);
+}
+.grass:hover .card {
+  transform: rotateY(180deg);
+}
+.ground:hover .card {
+  transform: rotateY(180deg);
+}
+.ice:hover .card {
+  transform: rotateY(180deg);
+}
+.poison:hover .card {
+  transform: rotateY(180deg);
+}
+.rock:hover .card {
+  transform: rotateY(180deg);
+}
+.steel:hover .card {
+  transform: rotateY(180deg);
+}
+.water:hover .card {
+  transform: rotateY(180deg);
+}
+.psychic:hover .card {
+  transform: rotateY(180deg);
+}
+.fighting:hover .card {
+  transform: rotateY(180deg);
+}
+
+.normalfront,
+.bugfront,
+.darkfront,
+.dragonfront,
+.electricfront,
+.fairyfront,
+.firefront,
+.flyingfront,
+.ghostfront,
+.grassfront,
+.groundfront,
+.icefront,
+.poisonfront,
+.rockfront,
+.steelfront,
+.waterfront,
+.psychicfront,
+.fightingfront,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 20px;
+  border: 5px solid;
+  border-color: var(--normal-color);
+  transition: 0.6s;
+}
+
+.normalfront,
+.bugfront,
+.darkfront,
+.dragonfront,
+.electricfront,
+.fairyfront,
+.firefront,
+.flyingfront,
+.ghostfront,
+.grassfront,
+.groundfront,
+.icefront,
+.poisonfront,
+.rockfront,
+.steelfront,
+.waterfront,
+.psychicfront,
+.fightingfront {
+  background-image: url("./resources/normal.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.normalback,
+.bugback,
+.darkback,
+.dragonback,
+.electricback,
+.fairyback,
+.fireback,
+.flyingback,
+.ghostback,
+.grassback,
+.groundback,
+.iceback,
+.poisonback,
+.rockback,
+.steelback,
+.waterback,
+.psychicback,
+.fightingback {
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  background-image: url("./resources/normal.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.bugfront,
+.bugback {
+  background-image: url("./resources/bug.png");
+}
+.darkfront,
+.darkback {
+  background-image: url("./resources/dark.png");
+}
+.dragonfront,
+.dragonback {
+  background-image: url("./resources/dragon.png");
+}
+.electricfront,
+.electricback {
+  background-image: url("./resources/electric.png");
+}
+.fairyfront,
+.fairyback {
+  background-image: url("./resources/fairy.png");
+}
+.firefront,
+.fireback {
+  background-image: url("./resources/fire.png");
+}
+.flyingfront,
+.flyingback {
+  background-image: url("./resources/flying.png");
+}
+.ghostfront,
+.ghostback {
+  background-image: url("./resources/ghost.png");
+}
+.grassfront,
+.grassback {
+  background-image: url("./resources/grass.png");
+}
+.groundfront,
+.groundback {
+  background-image: url("./resources/ground.png");
+}
+.icefront,
+.iceback {
+  background-image: url("./resources/ice.png");
+}
+.poisonfront,
+.poisonback {
+  background-image: url("./resources/poison.png");
+}
+.rockfront,
+.rockback {
+  background-image: url("./resources/rock.png");
+}
+.steelfront,
+.steelback {
+  background-image: url("./resources/steel.png");
+}
+.waterfront,
+.waterback {
+  background-image: url("./resources/water.png");
+}
+.psychicfront,
+.psychicback {
+  background-image: url("./resources/psychic.png");
+}
+.fightingfront,
+.fightingback {
+  background-image: url("./resources/fighting.png");
+}
+
+.normalinfo,
+.buginfo,
+.darkinfo,
+.electricinfo,
+.fairyinfo,
+.fireinfo,
+.flyinginfo,
+.ghostinfo,
+.grassinfo,
+.groundinfo,
+.iceinfo,
+.poisoninfo,
+.rockinfo,
+.steelinfo,
+.waterinfo,
+.psychicinfo,
+.fightinginfo {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  background-color: var(--normal-color);
+}
+
+.buginfo {
+  background-color: var(--bug-color);
+}
+.darkinfo {
+  background-color: var(--dark-color);
+}
+.dragoninfo {
+  background-color: var(--dragon-color);
+}
+.electricinfo {
+  background-color: var(--electric-color);
+}
+.fairyinfo {
+  background-color: var(--fairy-color);
+}
+.fireinfo {
+  background-color: var(--fire-color);
+}
+.flyinginfo {
+  background-color: var(--flying-color);
+}
+.ghostinfo {
+  background-color: var(--ghost-color);
+}
+.grassinfo {
+  background-color: var(--grass-color);
+}
+.groundinfo {
+  background-color: var(--ground-color);
+}
+.iceinfo {
+  background-color: var(--ice-color);
+}
+.poisoninfo {
+  background-color: var(--poison-color);
+}
+.rockinfo {
+  background-color: var(--rock-color);
+}
+.steelinfo {
+  background-color: var(--steel-color);
+}
+.waterinfo {
+  background-color: var(--water-color);
+}
+.psychicinfo {
+  background-color: var(--psychic-color);
+}
+.fightinginfo {
+  background-color: var(--fighting-color);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.typesp {
+  text-transform: uppercase;
+  font-size: xx-large;
+  width: 80%;
+  color: var(--basic-white);
+  border-bottom: 3px solid gray;
+}
+.icons {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  border-bottom: 3px solid gray;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+}
+.tname {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  margin-bottom: 1rem;
+}
+.normalicon,
+.bugicon,
+.darkicon,
+.dragonicon,
+.electricicon,
+.fairyicon,
+.fireicon,
+.flyingicon,
+.ghosticon,
+.grassicon,
+.groundicon,
+.iceicon,
+.poisonicon,
+.rockicon,
+.steelicon,
+.watericon,
+.psychicicon,
+.fightingicon {
+  background-image: url("./resources/classicResources/normal.png");
+  background-position: center;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  margin-right: 0.2rem;
+  margin: 1rem;
+}
+
+.bugicon {
+  background-image: url("./resources/classicResources/bug.png");
+}
+.darkicon {
+  background-image: url("./resources/classicResources/dark.png");
+}
+.dragonicon {
+  background-image: url("./resources/classicResources/dragon.png");
+}
+.electricicon {
+  background-image: url("./resources/classicResources/electric.png");
+}
+.fairyicon {
+  background-image: url("./resources/classicResources/fairy.png");
+}
+.fireicon {
+  background-image: url("./resources/classicResources/fire.png");
+}
+.flyingicon {
+  background-image: url("./resources/classicResources/flying.png");
+}
+.ghosticon {
+  background-image: url("./resources/classicResources/ghost.png");
+}
+.grassicon {
+  background-image: url("./resources/classicResources/grass.png");
+}
+.groundicon {
+  background-image: url("./resources/classicResources/ground.png");
+}
+.iceicon {
+  background-image: url("./resources/classicResources/ice.png");
+}
+.poisonicon {
+  background-image: url("./resources/classicResources/poison.png");
+}
+.rockicon {
+  background-image: url("./resources/classicResources/rock.png");
+}
+.steelicon {
+  background-image: url("./resources/classicResources/steel.png");
+}
+.watericon {
+  background-image: url("./resources/classicResources/water.png");
+}
+.psychicicon {
+  background-image: url("./resources/classicResources/psychic.png");
+}
+.fightingicon {
+  background-image: url("./resources/classicResources/fighting.png");
+}
+
+.stats {
+  display: flex;
+}
+.normalap,
+.bugap,
+.darkap,
+.dragonap,
+.electricap,
+.fairyap,
+.fireap,
+.flyingap,
+.ghostap,
+.grassap,
+.groundap,
+.iceap,
+.poisonap,
+.rockap,
+.steelap,
+.waterap,
+.psychicap,
+.fightingap {
+  color: var(--basic-white);
+  font-size: x-large;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--normal-color);
+}
+.bugnap {
+  border-color: var(--bug-color);
+}
+.darkapap {
+  border-color: var(--dark-color);
+}
+.dragonap {
+  border-color: var(--dragon-color);
+}
+.electricap {
+  border-color: var(--electric-color);
+}
+.fairyap {
+  border-color: var(--fairy-color);
+}
+.fireap {
+  border-color: var(--fire-color);
+}
+.flyingap {
+  border-color: var(--flying-color);
+}
+.ghostap {
+  border-color: var(--ghost-color);
+}
+.grassap {
+  border-color: var(--grass-color);
+}
+.groundap {
+  border-color: var(--ground-color);
+}
+.iceap {
+  border-color: var(--ice-color);
+}
+.poisonap {
+  border-color: var(--poison-color);
+}
+.rockap {
+  border-color: var(--rock-color);
+}
+.steelap {
+  border-color: var(--steel-color);
+}
+.waterap {
+  border-color: var(--water-color);
+}
+.psychicap {
+  border-color: var(--psychic-color);
+}
+.fightingap {
+  border-color: var(--fighting-color);
+}

@@ -1,0 +1,605 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submain {
+  width: 40%;
+  height: 90%;
+  background-color: var(--basic-white);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.logo {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1950px) {
+  .submain {
+    height: max-content;
+  }
+  .img {
+    width: 9rem;
+    height: 4rem;
+  }
+}
+.pokedex {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: xx-large;
+  cursor: pointer;
+}
+.title {
+  margin: 1rem;
+  font-size: xx-large;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+.formdiv {
+  width: 80%;
+  height: 80%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.spaninput {
+  font-size: large;
+  text-transform: capitalize;
+  padding: 0 0.5rem;
+}
+
+.namediv {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  height: 2.5rem;
+  border: 3px solid gray;
+  padding: 0 0.5rem;
+  border-radius: 10px;
+}
+.input:focus {
+  border: 3px solid var(--water-color);
+}
+.failinput {
+  height: 2.5rem;
+  border: 3px solid rgb(255, 0, 0);
+  padding: 0 0.5rem;
+  border-radius: 10px;
+}
+
+.hpdefense,
+.weightheight,
+.speedattack {
+  display: flex;
+  justify-content: space-between;
+}
+.hpdiv,
+.defensediv,
+.weightdiv,
+.heightdiv,
+.speeddiv,
+.attackdiv {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 6rem;
+}
+.types {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  height: 90%;
+  display: grid;
+  gap: 3rem;
+  grid-auto-rows: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+}
+[type="checkbox"] {
+  display: none;
+}
+.box {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+.normal,
+.bug,
+.dark,
+.dragon,
+.electric,
+.fighting,
+.fairy,
+.fire,
+.flying,
+.ghost,
+.grass,
+.ground,
+.ice,
+.poison,
+.rock,
+.steel,
+.water,
+.psychic {
+  color: var(--primary-color);
+  cursor: pointer;
+  position: relative;
+  padding-left: 3.5rem;
+  font-size: x-large;
+}
+.normal::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/normal.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.normal:hover::before {
+  background-color: var(--normal-color);
+}
+.ormal:checked + .normal::before {
+  background-color: var(--normal-color);
+}
+
+.flying::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/flying.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.flying:hover::before {
+  background-color: var(--flying-color);
+}
+.lying:checked + .flying::before {
+  background-color: var(--flying-color);
+}
+
+.grass::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/grass.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.grass:hover::before {
+  background-color: var(--grass-color);
+}
+.rass:checked + .grass::before {
+  background-color: var(--grass-color);
+}
+
+.fire::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/fire.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.fire:hover::before {
+  background-color: var(--fire-color);
+}
+.ire:checked + .fire::before {
+  background-color: var(--fire-color);
+}
+
+.water::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/water.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.water:hover::before {
+  background-color: var(--water-color);
+}
+.ater:checked + .water::before {
+  background-color: var(--water-color);
+}
+
+.bug::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/bug.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.bug:hover::before {
+  background-color: var(--bug-color);
+}
+.ug:checked + .bug::before {
+  background-color: var(--bug-color);
+}
+
+.electric::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/electric.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.electric:hover::before {
+  background-color: var(--electric-color);
+}
+.lectric:checked + .electric::before {
+  background-color: var(--electric-color);
+}
+
+.fairy::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/fairy.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.fairy:hover::before {
+  background-color: var(--fairy-color);
+}
+.airy:checked + .fairy::before {
+  background-color: var(--fairy-color);
+}
+
+.ghost::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/ghost.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.ghost:hover::before {
+  background-color: var(--ghost-color);
+}
+.host:checked + .ghost::before {
+  background-color: var(--ghost-color);
+}
+
+.fighting::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/fighting.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.fighting:hover::before {
+  background-color: var(--fighting-color);
+}
+.ighting:checked + .fighting::before {
+  background-color: var(--fighting-color);
+}
+
+.rock::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/rock.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.rock:hover::before {
+  background-color: var(--rock-color);
+}
+.ock:checked + .rock::before {
+  background-color: var(--rock-color);
+}
+
+.steel::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/steel.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.steel:hover::before {
+  background-color: var(--steel-color);
+}
+.teel:checked + .steel::before {
+  background-color: var(--steel-color);
+}
+
+.psychic::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/psychic.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.psychic:hover::before {
+  background-color: var(--psychic-color);
+}
+.sychic:checked + .psychic::before {
+  background-color: var(--psychic-color);
+}
+
+.ice::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/ice.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.ice:hover::before {
+  background-color: var(--ice-color);
+}
+.ce:checked + .ice::before {
+  background-color: var(--ice-color);
+}
+
+.dragon::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/dragon.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.dragon:hover::before {
+  background-color: var(--dragon-color);
+}
+.ragon:checked + .dragon::before {
+  background-color: var(--dragon-color);
+}
+
+.dark::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/dark.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.dark:hover::before {
+  background-color: var(--dark-color);
+}
+.ark:checked + .dark::before {
+  background-color: var(--dark-color);
+}
+
+.ground::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/ground.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.ground:hover::before {
+  background-color: var(--ground-color);
+}
+.round:checked + .ground::before {
+  background-color: var(--ground-color);
+}
+
+.poison::before {
+  content: "";
+  background: var(--basic-gray) url("./resources/poison.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: -18%;
+}
+.poison:hover::before {
+  background-color: var(--poison-color);
+}
+.oison:checked + .poison::before {
+  background-color: var(--poison-color);
+}
+
+.unknown {
+  display: none;
+}
+.shadow {
+  display: none;
+}
+
+.next {
+  display: flex;
+  justify-content: space-evenly;
+}
+.butt,
+.buttdisabled {
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  color: var(--basic-white);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  font-size: x-large;
+  border: 2px solid var(--primary-color);
+  transition: 1s;
+  margin-top: 1rem;
+}
+
+.buttdisabled {
+  color: var(--fire-color);
+  border: 2px solid var(--fire-color);
+  background-color: var(--basic-white);
+}
+
+.butt:hover {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--basic-white);
+}
+.buttprev {
+  padding: 1rem 2rem;
+  font-size: x-large;
+  text-transform: capitalize;
+  color: #999999;
+}
+
+.p {
+  font-size: x-large;
+  text-transform: capitalize;
+}
+.imgdiv {
+  overflow-y: scroll;
+  height: 60rem;
+  border-radius: 10px;
+  border: 3px solid var(--primary-color);
+}
+.imgdiv::-webkit-scrollbar {
+  width: 15px;
+}
+.imgdiv::-webkit-scrollbar-thumb {
+  background: lightblue;
+  border-radius: 10px;
+  transition: 1s;
+}
+.imgdiv::-webkit-scrollbar-thumb:hover {
+  background: rgb(16, 111, 143);
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+}
+
+.imgdiv::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.errordiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 5rem;
+  border-left: 8px solid rgb(223, 78, 78);
+  border-radius: 10px;
+  outline: 1px solid gray;
+  box-shadow: 5px 5px 15px gray;
+}
+
+.errormessage {
+  font-size: x-large;
+}
+
+.error {
+  color: rgb(223, 78, 78);
+}

@@ -1,0 +1,15 @@
+.main {
+  background: var(--primary-color) var(--main-background);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submain {
+  background: var(--secondary-color) var(--submain-background);
+  overflow-y: auto;
+  width: 70%;
+  height: 100%;
+}

@@ -1,0 +1,66 @@
+.background{
+    background-image: url('../images/fondo.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+    height: 140px;
+    /*background-image: url('/src/images/pngkey.com-rick-and-morty-png-36968.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    color: rgb(235, 222, 222);
+    font-weight: 900;
+    margin-bottom: 200px;
+    /*opacity: 1;*/
+    border-radius: 50%;
+    
+}
+.text{
+    position: absolute;
+    color: #000;
+}
+
+.imgPortal{
+    width: 140px;
+    height: 140px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(126, 1, 252);
+}
+@media (prefers-reduced-motion: no-preference) {
+    .imgPortal {
+      animation: App-logo-spin infinite 3s linear;
+    }
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.btn:hover{
+    color: rgb(26, 23, 26);
+    transform: scale(2.5);
+    transition: 1.5s;
+    
+    /*transform: rotate(720deg);*/
+}

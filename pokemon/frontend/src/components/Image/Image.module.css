@@ -1,0 +1,25 @@
+.main {
+  width: max-content;
+  height: max-content;
+}
+
+.img,
+.cimg {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin-top: 1rem;
+  border: 3px solid var(--primary-color);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transition: 1s;
+}
+.cimg {
+  transform: scale(1.2);
+  border: 3px solid var(--error-color);
+  background: url("../common/pokeball.svg");
+}
+
+.img:hover {
+  transform: scale(1.2);
+}

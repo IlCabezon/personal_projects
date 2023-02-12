@@ -1,0 +1,52 @@
+.main {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  --primary-color: #424242;
+  --secondary-color: rgb(228, 225, 225);
+  --pokemon-blue: #1d2c5e;
+  --instagram-color: #c13584;
+  --linkedin-color: #0e76a8;
+  --github-color: #666;
+  --main-background: url("./components/common/background.png");
+  --submain-background: url("./components/common/container.png");
+  --z-index-1: -1;
+  --z-index1: 1;
+  --z-index2: 2;
+  --z-index3: 3;
+  --z-index4: 4;
+  --z-index5: 5;
+  --z-index6: 6;
+  --z-index7: 7;
+  --z-index8: 8;
+  --z-index9: 9;
+  --basic-gray: rgb(128, 128, 128);
+  --basic-white: rgb(255, 253, 253);
+  --error-color: #e74e2b;
+  --ok-color: rgb(12, 144, 12);
+  --normal-color: #b6b6b6dd;
+  --flying-color: #719ab6c5;
+  --grass-color: #109617be;
+  --fire-color: #e0790add;
+  --water-color: #0a79e0e1;
+  --bug-color: #08410ce2;
+  --electric-color: #d0c208c5;
+  --fairy-color: #d873d8e0;
+  --ghost-color: #3f0e43c5;
+  --fighting-color: #61041585;
+  --rock-color: #2c181cc5;
+  --steel-color: #3c3b3bc5;
+  --psychic-color: #df7fe2c5;
+  --ice-color: #70d7f7c5;
+  --dragon-color: #3b3fffc5;
+  --dark-color: #303031c5;
+  --shadow-color: #0e0e37c5;
+  --ground-color: #632902c7;
+  --unknown-color: #e41185c7;
+  --poison-color: #9c40d1c7;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}

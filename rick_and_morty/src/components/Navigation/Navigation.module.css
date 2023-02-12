@@ -1,0 +1,104 @@
+@media (max-width:500px){
+  .nav{
+    display: none;
+  }
+}
+@media (min-width:500px) {
+  .nav{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(29, 26, 29);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.searchBar{
+    margin: 10px;
+    width: 50vw;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(26, 24, 24);
+    color: rgb(73, 69, 69);
+    text-align: center;
+}   
+.home{
+  text-decoration: none;
+  color: rgb(64, 163, 163);
+  font-size: x-large;
+}
+
+.toHome{
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+.create{
+  text-decoration: none;
+  color: rgb(64, 163, 163);
+  font-size: x-large;
+  text-transform: uppercase
+}
+.toForm{
+  display: inline;
+  margin-right: 20px;
+}
+.input{
+  display: inline;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.filters{
+  position: absolute;
+  top: 17px;
+}
+.filter{
+  display: inline;
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  top: 70px; 
+  right: .4px;
+  width: 25%;
+  background-color: rgb(26, 24, 24);
+  border: 2px solid rgb(64, 163, 163);
+  text-align: center;
+  color: rgb(64, 163, 163);
+  text-transform: uppercase;
+  font-size: xx-large;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  opacity: .98;
+  box-shadow: -7px 5px 15px rgb(82, 67, 67);
+}
+
+.filtros{
+  margin: 10px;
+}
+.episodes{
+  text-decoration: none;
+}
+.episo{
+  color:rgb(64, 163, 163);
+  font-weight: 800;
+  font-size: xx-large;
+  border-top: 2px solid rgb(64, 163, 163);
+}
+}
+@media (max-width:920px) {
+    .searchBar{
+      width: 35vw;
+    }
+    .toForm{
+      font-size: large;
+    }
+    .toHome{
+      font-size: large;
+    }
+}
+

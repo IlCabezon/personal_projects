@@ -1,0 +1,89 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.main {
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.submain {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  width: 25vw;
+}
+
+.pokes {
+  width: 40vw;
+}
+
+.gotta {
+  display: inline;
+  margin: 0.2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 4vw;
+  font-weight: 600;
+  text-shadow: -0.5px 0.5px 0 #1d2c5e, -1px 1px 0 #1d2c5e,
+    -1.5px 1.5px 0 #1d2c5e, -2px 2px 0 #1d2c5e, -2.5px 2.5px 0 #1d2c5e,
+    -3px 3px 0 #1d2c5e, -3.5px 3.5px 0px #1d2c5e, -4px 4px 0px #1d2c5e,
+    -4.5px 4.5px 0px #1d2c5e, -5px 5px 0px #1d2c5e, -5.5px 5.5px 0px #1d2c5e;
+}
+@media (max-width: 1420px) {
+  .logo {
+    width: 60vw;
+  }
+  .pokes {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1430px) {
+  .gotta {
+    font-size: 4rem;
+  }
+  .logo {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .pokes {
+    width: 70vw;
+  }
+}
+
+.navlink {
+  animation: bounce 3s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1.1);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

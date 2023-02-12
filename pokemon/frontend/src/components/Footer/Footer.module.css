@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bodyfoot {
+  width: 100vw;
+  height: 4.3rem;
+  position: absolute;
+  z-index: var(--z-index5);
+  bottom: 0;
+  right: 0;
+  background-color: #1d1d1d;
+}
+
+.notch {
+  width: 100vw;
+  height: 2rem;
+  position: absolute;
+  right: 0;
+  z-index: var(--z-index5);
+  bottom: 4.1rem;
+}
+
+.left {
+  width: 20vw;
+  height: 10px;
+  opacity: 0.9;
+  border-top-right-radius: 10px;
+  bottom: 50%;
+  position: absolute;
+  background-color: #1d1d1d;
+}
+
+.bot {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 50%;
+  background-color: #1d1d1d;
+  opacity: 0.9;
+}
+
+.right {
+  width: 20vw;
+  height: 10px;
+  opacity: 0.9;
+  border-top-left-radius: 10px;
+  right: 0;
+  bottom: 50%;
+  position: absolute;
+  background-color: #1d1d1d;
+}

@@ -1,0 +1,135 @@
+.main {
+  position: relative;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: var(--z-index2);
+  right: 99.2%;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+}
+.svg {
+  width: 100px;
+  height: 50px;
+  margin: 0.5rem;
+  display: block;
+}
+
+.span {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.activePokedex {
+  border-right: 20px solid #e3350d;
+  transition: 1s;
+}
+.activePokedex:hover {
+  transform: translateX(119px);
+  background: #e3350d;
+  box-shadow: 5px 5px 15px var(--primary-color);
+}
+/* .activePokedex:focus {
+  background: #e3350d;
+  transform: translateX(119px);
+} */
+
+.activeCreate {
+  border-right: 20px solid #4dad5b;
+  transition: 1s;
+}
+.activeCreate:hover {
+  background: #4dad5b;
+  transform: translateX(119px);
+  box-shadow: 5px 5px 15px var(--primary-color);
+}
+/* .activeCreate:focus {
+  background: #4dad5b;
+  transform: translateX(119px);
+} */
+
+.activeFavourite {
+  border-right: 20px solid #e6bc2f;
+  transition: 1s;
+}
+.activeFavourite:hover {
+  background: #e6bc2f;
+  transform: translateX(119px);
+  box-shadow: 5px 5px 15px var(--primary-color);
+}
+/* .activeFavourite:focus {
+  background: #e6bc2f;
+  transform: translateX(119px);
+} */
+
+.activeLanding {
+  border-right: 20px solid #30a7d7;
+  transition: 1s;
+}
+.activeLanding:hover {
+  background: #30a7d7;
+  transform: translateX(119px);
+  box-shadow: 5px 5px 15px var(--primary-color);
+}
+/* .activeLanding:focus {
+  background: #30a7d7;
+  transform: translateX(119px);
+} */
+
+.activeGame {
+  border-right: 20px solid #ee6b2f;
+  border-bottom-right-radius: 10px;
+  transition: 1s;
+}
+.activeGame:hover {
+  background: #ee6b2f;
+  transform: translateX(119px);
+  box-shadow: 5px 5px 15px var(--primary-color);
+}
+/* .activeGame:focus {
+  background: #ee6b2f;
+  transform: translateX(119px);
+} */
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+.logo:hover {
+  -webkit-animation: bounce 0.3s linear normal both;
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  40% {
+    -webkit-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+  }
+  60% {
+    -webkit-transform: translate(0, 2px);
+    transform: translate(0, 2px);
+  }
+  80% {
+    -webkit-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}

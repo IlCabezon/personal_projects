@@ -1,0 +1,50 @@
+@media (max-width:500px){
+    .ul{
+        list-style: none;
+    }
+
+    .botones{
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 30px;
+        background-color:rgb(109, 24, 179);
+        text-transform: uppercase;
+        color: rgb(241, 228, 241);
+    }   
+
+    .clearButton{
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 30px;
+        background-color:rgb(179, 55, 24);
+        text-transform: uppercase;
+        color: rgb(241, 228, 241);
+    }  
+}
+.ul{
+    list-style: none;
+}
+@media (min-width:500px){
+    .botones{
+        cursor: pointer;
+        width: 200px;
+        margin-right: 10px;
+        background-color: rgb(26, 24, 24);
+        color: rgb(64, 163, 163);
+        border: 0;
+        text-transform: uppercase;
+        font-size: large;
+    }
+    .clearButton{
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 30px;
+        background-color:rgb(67, 66, 73);
+        text-transform: uppercase;
+        color: rgb(64, 163, 163);
+        cursor: pointer;
+    }
+}

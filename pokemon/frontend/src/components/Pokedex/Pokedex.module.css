@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: var(--z-index1);
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.submain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.logo {
+  width: 13rem;
+  height: 5rem;
+}
+
+.body {
+  background-color: rgb(221, 221, 221);
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 4%;
+  margin-bottom: 6%;
+}
+
+.pagination {
+  bottom: 10%;
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pages,
+.currentPage {
+  font-size: large;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.currentPage {
+  background-color: #ee6b2f;
+}
